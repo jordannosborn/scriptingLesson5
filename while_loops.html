@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>While loops continued</title>
+    </head>
+    <body>
+        <h1>While loops continued</h1>
+        <div id="info"></div>
+        <script>
+            let num; 
+            let textHdr = "Times tables for "; 
+            let text = ""; 
+            do {//exit controlled loop 
+                num = Number(prompt("Enter a number between 1 and 25", 2))
+            }while (num >0 || num <26);
+            
+
+            text = textHdr + num + "<br>"; 
+            for(let i = 1; i< 13; i++)
+                text += num + " x " + i + " = " + (num * 1) + "<br>";
+            document.getElementById("info").innerHTML = text; 
+        </script>
+    </body>
+</html>

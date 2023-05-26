@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Demonstrate break and continue</title>
+    </head>
+    <body>
+        <h1>Demo break vs continue</h1>
+        <div id="infoB"></div>
+        <div id="infoC"></div>
+        <script> 
+            let textB = "Demonstrate break<br>"; 
+            let textC = "Demonstrate continue<br>"; 
+            for(let num=0; ; num++){
+                if (num == 5)
+                    break; 
+                textB += "Num = "+num + "<br>"; 
+            }
+
+            for(let num = 0; num < 10 ; num++){
+                if (num == 5)
+                    continue; 
+                textC += "Num = "+num + "<br>";
+            }
+            document.getElementById("infoB").innerHTML = textB
+            document.getElementById("infoC").innerHTML = textC
+
+        </script>
+    </body>
+</html>
